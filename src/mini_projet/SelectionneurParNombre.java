@@ -1,5 +1,5 @@
 package mini_projet;
 
-public class SelectionneurParNombre {
+public abstract class SelectionneurParNombre implements Selectioneur {
 
 }

@@ -1,5 +1,6 @@
 package mini_projet;
 
-public class SelectionneurParSeuil {
-
+public abstract class SelectionneurParSeuil implements Selectioneur {
+    public SelectionneurParSeuil(double seuil) {
+    }
 }

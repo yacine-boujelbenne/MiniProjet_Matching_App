@@ -2,15 +2,11 @@ package mini_projet;
 
 import java.util.List;
 
-public class PreTraiteur_Simple extends PreTraiteur {
+public class PreTraiteur_Simple implements PreTraiteur {
     private String texte;
 
     public PreTraiteur_Simple(String texte) {
         this.texte = texte;
-    }
-
-    public String getTexte() {
-        return texte;
     }
 
     public void setTexte(String texte) {
@@ -18,8 +14,7 @@ public class PreTraiteur_Simple extends PreTraiteur {
     }
 
     @Override
-    List<noms> pretraiter(List<noms> nom) {
-        System.out.println("Pretraitement simple du texte : " + texte);
+    public List<noms> pretraiter(List<noms> nom) {
         return nom;
     }
 

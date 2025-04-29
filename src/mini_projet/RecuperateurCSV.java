@@ -1,5 +1,13 @@
 package mini_projet;
 
-public class RecuperateurCSV {
+import java.util.List;
+
+public class RecuperateurCSV implements Recuperateur {
+
+    @Override
+    public List<noms> recuperer() {
+
+        return null;
+    }
 
 }

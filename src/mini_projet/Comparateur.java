@@ -1,5 +1,6 @@
 package mini_projet;
 
-public class Comparateur {
+public interface Comparateur {
+    public boolean comparer();
 
 }

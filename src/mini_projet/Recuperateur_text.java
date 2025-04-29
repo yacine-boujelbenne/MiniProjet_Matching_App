@@ -1,15 +1,16 @@
 package mini_projet;
 
-public class Recuperateur_text implements Recuperateur {
-    private String texte;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Recuperateur_text(String texte) {
-        this.texte = texte;
-    }
+public class Recuperateur_text implements Recuperateur {
+    List<noms> text = new ArrayList<noms>();
 
     @Override
-    public String recuperer() {
-        return texte;
+    public noms recuperer() {
+        noms nom = text.getLast();
+        text.removeLast();
+        return nom;
     }
 
 }
